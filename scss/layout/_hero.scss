@@ -1,0 +1,242 @@
+.hero {
+    position: relative;
+
+    &__dot {
+        position: absolute;
+        top: 25%;
+    }
+
+    &__dot-2 {
+        position: absolute;
+        top: 63%;
+        left: 21%;
+    }
+
+    &__dot-3 {
+        position: absolute;
+        top: 40%;
+        left: 83%;
+    }
+
+    &__dot-4 {
+        position: absolute;
+        right: 0;
+        top: 8%;
+    }
+
+    &__wrapper {
+        margin-top: 68px;
+        position: relative;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 64px;
+        font-weight: 700;
+    }
+
+    &__desc {
+        text-align: center;
+        margin-top: 24px;
+        font-size: 20px;
+        font-weight: 400;
+        color: grey;
+    }
+
+    &__img-2 {
+        position: relative;
+
+        &::after {
+            content: url(../../assets/icon/dot\ hero.svg);
+            position: absolute;
+            top: -20px;
+            left: 400px;
+            z-index: -999;
+        }
+
+        &::before {
+            content: url(../../assets/icon/dot\ hero\ 2.svg);
+            position: absolute;
+            bottom: -20px;
+            left: 400px;
+            z-index: -999;
+        }
+    }
+
+    &__btn-1 {
+        text-align: center;
+    }
+
+    &__img-2 {
+        text-align: center;
+        margin-top: 63px;
+    }
+
+    &__personal-info-1 {
+        position: absolute;
+        top: 46%;
+        left: 11.5%;
+        width: 175px;
+        height: 95px;
+        border-radius: 16px;
+        box-shadow: 0px 8px 24px 0px #00000026;
+        text-align: center;
+        background: white;
+    }
+
+    &__personal-info-span {
+        position: relative;
+        display: block;
+        padding: 0 20px;
+        color: grey;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 15px 20px;
+
+        &::before {
+            position: absolute;
+            content: url(../../assets/icon/star.svg);
+            right: 72%;
+            top: 25%;
+        }
+    }
+
+    &__personal-info-spn {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32.74px;
+    }
+
+    &__personal-info-spn-2 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32.74px;
+    }
+
+    &__personal-info-2 {
+        position: absolute;
+        box-shadow: 0px 8px 24px 0px #00000026;
+        width: 166px;
+        height: 166px;
+        border-radius: 16px;
+        text-align: center;
+        padding: 27px 0;
+        left: 75%;
+        top: 83%;
+        background: white;
+
+    }
+
+    &__personal-spn-3 {
+        margin-top: -8px;
+        margin-left: -15px;
+    }
+
+    &__person-span-1 {
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 12.5px;
+        color: black;
+        display: block;
+        position: relative;
+
+        &::before{
+            position: absolute;
+            content: url(../../assets/images/hero\ img\ 5.svg);
+            right: 70%;
+            top: -50%;
+        }
+
+    }
+
+    &__person-span-2 {
+        font-size: 6px;
+        font-weight: 600;
+        line-height: 7.5px;
+        color: #d9d9d9;
+    }
+
+
+    &__person-desc {
+        color: black;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 13.64px;
+        margin-top: 15px;
+    }
+}
+
+@include mobile() {
+    .container {
+        width: 100%;
+    }
+
+    .hero {
+        position: relative;
+
+        &__dot {
+            position: absolute;
+            top: 45%;
+            left: -6%;
+        }
+
+        &__dot-2 {
+            display: none;
+        }
+
+        &__img-2 {
+            margin: 0 auto;
+            width: 330px;
+            margin-top: 63px;
+        }
+
+        &__dot-3 {
+            display: none;
+        }
+
+        &__dot-4 {
+            position: absolute;
+            right: 0;
+            top: -8%;
+        }
+
+        &__desc {
+            text-align: center;
+        }
+
+        &__title {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 38.19px;
+        }
+
+        &__img-2 {
+            position: relative;
+
+            &::after {
+                content: url(../../assets/icon/dot\ hero.svg);
+                position: absolute;
+                top: -20px;
+                left: 240px;
+            }
+
+            &::before {
+                content: url(../../assets/icon/dot\ hero\ 2.svg);
+                position: absolute;
+                bottom: -10px;
+                left: -10px;
+                z-index: -999;
+            }
+        }
+        &__personal-info-1 {
+            position: absolute;
+            top: 55%;
+            left: 16%;
+        }
+
+        &__personal-info-2 {
+            position: absolute;
+            left: 55%;
+        }
+    }
+}

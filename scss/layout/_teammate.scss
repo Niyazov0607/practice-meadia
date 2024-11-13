@@ -1,0 +1,116 @@
+.teammate {
+    &__wrapper {
+        text-align: center;
+        margin-top: 150px;
+    }
+
+    &__span {
+        color: #377dff;
+    }
+
+    &__title {
+        font-size: 55px;
+        font-weight: 600;
+        line-height: 75.02px;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: 65px;
+        margin-top: 38px;
+    }
+
+    &__img {
+        position: relative;
+
+        &::after {
+            content: url(../../assets/icon/dot\ hero.svg);
+            position: absolute;
+            top: -20px;
+            left: -30px;
+            z-index: -999;
+        }
+
+        &::before {
+            content: url(../../assets/icon/dot\ hero\ 2.svg);
+            position: absolute;
+            bottom: -20px;
+            left: 496px;
+            z-index: -999;
+        }
+    }
+
+    &__desc {
+        color: grey;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+    }
+    &__desc-2 {
+        color: grey;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+        margin-top: 24px;
+    }
+
+    &__button-2 {
+        position: relative;
+
+        &::before {
+            content: url(../../assets/icon/play-circle.svg);
+            position: absolute;
+            left: 35px;
+            bottom: 7px;
+        }
+    }
+}
+
+@include mobile() {
+    .container {
+        width: 100%;
+    }
+
+    .teammate {
+        &__info {
+            flex-direction: column-reverse;
+        }
+
+        &__img {
+            width: 340px;
+            position: relative;
+
+            &::after {
+                content: url(../../assets/icon/dot\ hero.svg);
+                position: absolute;
+                top: -20px;
+                left: 10px;
+                z-index: -999;
+            }
+
+            &::before {
+                display: none;
+            }
+        }
+
+        &__desc {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        &__desc-2 {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        &__btns {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

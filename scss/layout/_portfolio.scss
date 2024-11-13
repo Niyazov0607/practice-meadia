@@ -1,0 +1,120 @@
+.portfolio {
+    &__wrapper {
+        text-align: center;
+        margin-top: 130px;
+        position: relative;
+    }
+
+    &__span {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 24px;
+        color: #377dff;
+    }
+
+    &__title {
+        font-size: 55px;
+        font-weight: 600;
+        line-height: 75.02px;
+        margin-top: 20px;
+    }
+
+    &__desc {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 34px;
+        color: #464646;
+        margin-top: 28px;
+    }
+
+    &__cards {
+        display: flex;
+        gap: 69px;
+        margin-top: 73px;
+    }
+
+    &__card {
+        position: relative;
+        transition: 0.5s ease;
+    }
+
+    &__card:hover {
+        transform: scale(1.1);
+    }
+
+    &__card-desc {
+        position: absolute;
+        bottom: 8%;
+        left: 6%;
+        color: white;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    &__card-2 {
+        width: 350px;
+        height: 350px;
+        position: relative;
+        transition: 0.5s ease;
+    }
+
+    &__card-2:hover {
+        transform: scale(1.1);
+    }
+
+    &__card-desc {
+        position: absolute;
+        bottom: 8%;
+        left: 6%;
+        color: white;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    &__dot {
+        position: absolute;
+        top: 18%;
+        right: 0;
+    }
+}
+
+@include mobile() {
+    .container {
+        width: 100%;
+    }
+
+    .portfolio {
+
+
+        &__dot {
+            display: none;
+        }
+
+        &__span {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 17.5px;
+        }
+
+        &__title {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 32.74px;
+        }
+
+        &__desc {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        &__cards {
+            display: grid;
+        }
+
+
+        &__card-2 {
+            margin-left: 15px;
+        }
+    }
+}

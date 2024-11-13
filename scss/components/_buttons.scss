@@ -1,0 +1,147 @@
+.nav {
+    &__btn {
+        width: 185px;
+        height: 48px;
+        padding: 12px 50px 12px 50px;
+        border-radius: 24px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        border: 1px solid #377dff;
+        background: #00000000;
+        color: #377dff;
+        transition: 0.3s ease;
+    }
+
+    &__btn:hover {
+        background: #377dff;
+        color: white;
+        box-shadow: 0px 4px 8px 0px #377dff80;
+    }
+}
+
+.hero {
+    &__button-1 {
+        margin-top: 44px;
+        text-align: center;
+    }
+
+    &__btn-1 {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        width: 201px;
+        height: 48px;
+        background: #377dff;
+        color: white;
+        border: 1px solid #377dff;
+        border-radius: 24px;
+        transition: 0.3s ease;
+        box-shadow: 0px 4px 8px 0px #377dff80;
+    }
+
+    &__btn-1:hover {
+        background: white;
+        color: #377dff;
+        box-shadow: none;
+    }
+}
+
+.teammate {
+    &__btns {
+        display: flex;
+        margin-top: 24px;
+        gap: 25px;
+    }
+
+    &__btn {
+        width: 171px;
+        height: 48px;
+        border-radius: 24px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        background: #377dff;
+        color: white;
+        border: 1px solid #377dff;
+        transition: 0.3s ease;
+        box-shadow: 0px 4px 8px 0px #377dff80;
+    }
+
+    &__btn:hover {
+        background: white;
+        color: #377dff;
+        box-shadow: none;
+    }
+
+    &__btn-2 {
+        width: 210px;
+        height: 48px;
+        border-radius: 24px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        color: #377dff;
+        border: 1px solid #377dff;
+        transition: 0.3s ease;
+        background: white;
+    }
+    &__btn-2:hover {
+        box-shadow: 0px 4px 8px 0px #377dff80;
+        background: #377dff;
+        color: white;
+    }
+}
+
+.portfolio {
+    &__button {
+        margin-top: 34px;
+    }
+
+    &__btn {
+        width: 226px;
+        height: 48px;
+        border-radius: 24px;
+        background: white;
+        border: 1px solid #377dff;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        color: #377dff;
+        transition: 0.3s ease;
+    }
+
+    &__btn:hover {
+        box-shadow: 0px 4px 8px 0px #377dff80;
+        background: #377dff;
+        color: white;
+        border: none;
+    }
+}
+
+.collaboration {
+    &__button {
+        margin-top: 25px;
+    }
+
+    &__btn {
+        width: 193px;
+        height: 48px;
+        border-radius: 24px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        background: #377DFF;
+        color: white;
+        box-shadow: 0px 4px 8px 0px #377dff80;
+        border: none;
+        transition: 0.3s ease;
+    }
+
+    &__btn:hover {
+        border: 1px solid #377DFF;
+        background: white;
+        color: #377DFF;
+        box-shadow: none;
+    }
+}
